@@ -34,6 +34,7 @@ section {
   text-decoration: none;
   display: inline-block;
   margin: 10px;
+  box-shadow: 0 0 8px hsla(12, 88%, 59%, 0.226);
 }
 .bg-pattern {
   background-image: url(./images/bg-tablet-pattern.svg);
@@ -74,6 +75,47 @@ header .cta-link {
 }
 .hero h1 {
   font-size: 40px;
+}
+footer{
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  background-color: hsl(233, 12%, 13%);
+}
+footer div input{
+  padding: 5px;
+  margin: 20px 0;
+  border-radius: 20px;
+  border: none;
+}
+footer .form{
+  width: 100%;
+  text-align: center;
+}
+footer div #Lets{
+  background-color: hsl(12, 88%, 59%);
+  color: white;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  border: none;
+
+}
+footer .Black{
+  display: flex;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+}
+.Black nav{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.form p{
+  position: relative;
+  top: 20rem;
 }
 
 @media (min-width: 768px) {
@@ -145,10 +187,57 @@ header .cta-link {
   text-align: center;
   display: inline-block;
 }
+.Down{
+  display: none;
+}
+.testimonials ul{
+  list-style: none;
+}
+.testimonials li img{
+  width: 30%;
+  margin: 20px 0;
+  
+}
+.testimonials h3{
+  margin: 20px 0;
+}
+.testimonials p {
+  margin: 0 0 50px 0;
+  padding: 0 10px;
+}
+.testimonials{
+  text-align: center;
+}
+.simplify{
+  text-align: center;
+  padding: 50px 0;
+  background-image: url("/images/bg-simplify-section-mobile.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.simplify h2{
+  color: white;
+  font-size: 30px;
+  padding: 0 50px;
+}
+.simplify a{
+  background-color: white;
+  color: hsl(12, 88%, 59%);
+  margin:20px;
+}
+footer{
+  display: flex;
+  flex-direction: row;
+}
 @media (min-width: 768px) {
   .unique-features {
     display: flex;
     gap: 40px;
+    background-image: url("images/bg-tablet-pattern.svg");
+    background-repeat: no-repeat;
+    background-position-y: calc(0% + 300px);
+    background-size: contain;
+    background-position-x:calc(0% - 200px);
   }
   .unique-features > div {
     flex: 1;
@@ -163,9 +252,41 @@ header .cta-link {
   .features h3 span {
     margin-right: 20px;
   }
-  .features p {
+  .features p{
     margin-left: 70px;
   }
+  .testimonials ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+  }
+  .Down{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+  }
+  .red{
+    display: none;
+  }
+  .testimonials{
+    margin: 100px 0;
+  }
+  .simplify{
+    display: flex;
+    align-items: center;
+    background-image: url("/images/bg-simplify-section-desktop.svg");
+    justify-content: space-around;
+    background-size: cover;
+    background-position-y: calc(30%);
+    gap: 200px;}
+
+   .simplify h2{
+     width: 40%;
+     text-align: left;
+   }
 }
 
 /* simplify */
