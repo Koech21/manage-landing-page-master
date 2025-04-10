@@ -76,6 +76,44 @@ header .cta-link {
 .hero h1 {
   font-size: 40px;
 }
+/*Testimonials*/
+.testimonials ul{
+  list-style: none;
+}
+.testimonials li img{
+  width: 30%;
+  margin: 20px 0;
+  
+}
+.testimonials h3{
+  margin: 20px 0;
+}
+.testimonials p {
+  margin: 0 0 50px 0;
+  padding: 0 10px;
+}
+.testimonials{
+  text-align: center;
+}
+/* simplify */
+.simplify{
+  text-align: center;
+  padding: 50px 0;
+  background-image: url("/images/bg-simplify-section-mobile.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.simplify h2{
+  color: white;
+  font-size: 30px;
+  padding: 0 50px;
+}
+.simplify a{
+  background-color: white;
+  color: hsl(12, 88%, 59%);
+  margin:20px;
+}
+/* footer */
 footer{
   display: flex;
   flex-direction: column-reverse;
@@ -103,19 +141,20 @@ footer div #Lets{
 footer .Black{
   display: flex;
   color: white;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
+  width: 60%;
+  gap: 10px;
+  margin: auto;
+  margin-bottom: 20px;
 
 }
-.Black nav{
+footer .Black nav{
   display: flex;
   flex-direction: column;
-  width: 100%;
 }
 .form p{
   position: relative;
   top: 20rem;
+
 }
 
 @media (min-width: 768px) {
@@ -189,45 +228,6 @@ footer .Black{
 }
 .Down{
   display: none;
-}
-.testimonials ul{
-  list-style: none;
-}
-.testimonials li img{
-  width: 30%;
-  margin: 20px 0;
-  
-}
-.testimonials h3{
-  margin: 20px 0;
-}
-.testimonials p {
-  margin: 0 0 50px 0;
-  padding: 0 10px;
-}
-.testimonials{
-  text-align: center;
-}
-.simplify{
-  text-align: center;
-  padding: 50px 0;
-  background-image: url("/images/bg-simplify-section-mobile.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.simplify h2{
-  color: white;
-  font-size: 30px;
-  padding: 0 50px;
-}
-.simplify a{
-  background-color: white;
-  color: hsl(12, 88%, 59%);
-  margin:20px;
-}
-footer{
-  display: flex;
-  flex-direction: row;
 }
 @media (min-width: 768px) {
   .unique-features {
